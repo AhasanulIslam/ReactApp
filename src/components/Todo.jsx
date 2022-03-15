@@ -16,9 +16,7 @@ const Todo = () => {
 
 
   const deleteTodo = value => {
-      console.log(value);
       const updatedList = todoName.filter(el => el.id !== value)
-      console.log(updatedList);
       setTodoName(updatedList)
   }
 
@@ -32,7 +30,7 @@ const Todo = () => {
       />
       <button onClick={saveTodo}>Add Todo</button>
 
-      {todoName.length == 0 ? (
+      {todoName.length === 0 ? (
         <h1>Please add todo</h1>
       ) : (
         todoName.map((el) => (

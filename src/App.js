@@ -1,12 +1,16 @@
-import './App.css';
-import Todo from './components/Todo';
-
-
+// import './App.css';
+import { useEffect, useState } from "react";
+import CallGetApi from "./components/CallGetApi";
+import Todo from "./components/Todo";
+import axios from "axios";
 
 function App() {
+  
+ 
   return (
     <div className="App">
-        <Todo/>
+      {/* <Todo/> */}
+      <CallGetApi />
     </div>
   );
 }
